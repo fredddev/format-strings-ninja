@@ -1,0 +1,48 @@
+{
+  "name": "format-strings-ninja",
+  "version": "0.1.0",
+  "description": "Format strings like a ninja \u2014 slug, cases, accents removal, HTML cleaning, smart titles, counts, etc.",
+  "keywords": [
+    "string",
+    "text",
+    "formatter",
+    "slug",
+    "cases",
+    "typescript",
+    "npm"
+  ],
+  "license": "MIT",
+  "author": "Freddy Vincenty",
+  "main": "dist-node/index.js",
+  "module": "dist-browser/index.js",
+  "types": "dist-node/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist-browser/index.js",
+      "require": "./dist-node/index.js",
+      "types": "./dist-node/index.d.ts"
+    }
+  },
+  "browser": "dist-browser/index.js",
+  "homepage": "https://github.com/fredddev/format-strings-ninja",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredddev/format-strings-ninja"
+  },
+  "scripts": {
+    "build-browser": "tsc --project tsconfig.json --outDir dist-browser --module ES2015",
+    "build-node": "tsc --project tsconfig.json --outDir dist-node --module commonjs",
+    "build": "npm run build-browser & npm run build-node",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "files": [
+    "dist-browser",
+    "dist-node"
+  ],
+  "engines": {
+    "node": ">=12"
+  }
+}
