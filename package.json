@@ -1,6 +1,6 @@
 {
   "name": "format-strings-ninja",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Format strings like a ninja \u2014 slug, cases, accents removal, HTML cleaning, smart titles, counts, etc.",
   "keywords": [
     "string",

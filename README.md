@@ -40,7 +40,7 @@ console.log(format.toTitleCase("the quick brown fox")); // "The Quick Brown Fox"
 
 ### In Node (CommonJS)
 ```js
-const { format } = require("format-strings-ninja");
+const format = require("format-strings-ninja");
 
 console.log(format.toSlug("Hello World!")); // "hello-world"
 console.log(format.capitalize("ninja"));    // "Ninja"
